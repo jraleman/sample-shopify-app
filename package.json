@@ -1,0 +1,9 @@
+{
+  "name": "sample-shopify-app",
+  "version": "1.0.0",
+  "description": "A sample Shopify App build with Node and React",
+  "main": "index.js",
+  "repository": "https://github.com/jraleman/sample-shopify-app",
+  "author": "jraleman <jraleman@bendiburg.com>",
+  "license": "MIT"
+}
