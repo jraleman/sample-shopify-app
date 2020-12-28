@@ -10,7 +10,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "NODE_ENV=production node server.js next start"
   },
   "dependencies": {
     "@shopify/koa-shopify-auth": "^3.2.0",
