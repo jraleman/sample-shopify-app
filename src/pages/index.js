@@ -1,10 +1,12 @@
-import { Page, TextStyle } from '@shopify/polaris';
+import { Layout, Page, TextStyle } from '@shopify/polaris';
 
 const Index = () => (
     <Page>
-        <TextStyle variation="positive">
-        Sample app using React and Next.js
-        </TextStyle>
+        <Layout>
+            <TextStyle variation="positive">
+                Sample app using React and Next.js
+            </TextStyle>
+        </Layout>
     </Page>
 );
 
