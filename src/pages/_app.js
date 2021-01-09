@@ -1,8 +1,8 @@
 import App from 'next/app';
 import Head from 'next/head';
 import { AppProvider } from '@shopify/polaris';
-import '@shopify/polaris/dist/styles.css';
 import translations from '@shopify/polaris/locales/en.json';
+import '@shopify/polaris/dist/styles.css';
 
 const App = ({ Component, pageProps }) => (
     <>
