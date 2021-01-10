@@ -1,6 +1,26 @@
 # Sample Shopify App
 Building a Shopify App with Node and React
 
+## Setup
+Download the repository via git:
+
+```
+git clone https://github.com/jraleman/sample-shopify-app
+```
+
+Once cloned, we go into the directory, and install dependencies:
+
+```
+cd sample-shopify-app/
+npm install
+```
+
+Then we can run the app using the following command:
+
+```
+npm run dev
+```
+
 ## Todo
 - [x] [Set up your app](https://shopify.dev/tutorials/build-a-shopify-app-with-node-and-react/set-up-your-app)
 - [x] [Embed your app in Shopify](https://shopify.dev/tutorials/build-a-shopify-app-with-node-and-react/embed-your-app-in-shopify)
