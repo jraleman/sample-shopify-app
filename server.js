@@ -29,8 +29,10 @@ app.prepare().then(() => {
           secret: SHOPIFY_API_SECRET_KEY,
           scopes: ['read_products'],
           afterAuth(ctx) {
-            const { shop, accessToken } = ctx.session;
-            ctx.redirect('/');
+            const { request, redirect, session } = ctx;
+            const urlParams = new URLSearchParams(request.url);
+            const shop = urlParams.get('shop');
+            redirect(`/?shop=${shop}`);
           },
         }),
       );
