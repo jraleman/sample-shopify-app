@@ -19,4 +19,10 @@ const App = ({ Component, pageProps }) => (
     </>
 );
 
+App.getInitialProps = async ({ ctx }) => {
+    return {
+      shopOrigin: ctx.query.shop,
+    }
+};
+
 export default App;
