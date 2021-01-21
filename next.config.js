@@ -1,7 +1,7 @@
 const withCSS = require("@zeit/next-css");
 const webpack = require("webpack");
 
-require("dontenv").config({ path: '.env' });
+require("dotenv").config({ path: '.env' });
 const { SHOPIFY_API_KEY } = process.env;
 
 module.exports = withCSS({
