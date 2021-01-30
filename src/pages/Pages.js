@@ -13,9 +13,11 @@ const Pages = () => {
     const openResource = () => setIsResourceOpen(true);
     const closeResource = () => setIsResourceOpen(false);
     const toggleResource = () => setIsResourceOpen(r => !r);
-    const handleSelection = (resource) => {
+    const handleResourceSelection = (r) => {
+        const idsFromResources = r && r.selection.map(({ id }) => id);
+        console.log('resource: ', r);
+        console.log('idsFromResources: ', idsFromResources);
         closeResource();
-        console.log('resource', resource);
     };
 
     const action = {
@@ -34,7 +36,7 @@ const Pages = () => {
                 resourceType="Product"
                 showVariants={false}
                 open={isResourceOpen}
-                onSelection={handleSelection}
+                onSelection={handleResourceSelection}
                 onCancel={closeResource}
             />
             <Layout>
